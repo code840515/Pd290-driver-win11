@@ -7,7 +7,7 @@ param(
 $ErrorActionPreference = 'Stop'
 
 if ([string]::IsNullOrWhiteSpace($FilePath)) {
-    $FilePath = Join-Path (Split-Path -Parent $PSScriptRoot) 'pd290-win10.prn'
+    $FilePath = Join-Path (Split-Path -Parent $PSScriptRoot) 'Pd290-win10.prn'
 }
 
 if (-not (Test-Path -LiteralPath $FilePath -PathType Leaf)) {

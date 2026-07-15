@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param(
     [string] $FilePath
 )
@@ -8,7 +8,7 @@ $deviceInterfaceGuid = [guid]'{D14692B4-3AFD-4F6C-AB91-F2B456CF7F77}'
 
 if ([string]::IsNullOrWhiteSpace($FilePath)) {
     $packageRoot = Split-Path (Split-Path -Parent $PSScriptRoot) -Parent
-    $FilePath = Join-Path $packageRoot 'pd290-win10.prn'
+    $FilePath = Join-Path $packageRoot 'Pd290-win10.prn'
 }
 if (-not (Test-Path -LiteralPath $FilePath -PathType Leaf)) {
     throw "PRN file not found: $FilePath"
