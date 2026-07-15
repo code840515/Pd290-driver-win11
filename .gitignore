@@ -1,0 +1,8 @@
+*.pfx
+*.p12
+*.pvk
+*.key
+*.pem
+*.snk
+.DS_Store
+Thumbs.db

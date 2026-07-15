@@ -1,0 +1,34 @@
+; Pd290-Win11 / PL2305 WinUSB binding for Windows 11 x64
+
+[Version]
+Signature="$Windows NT$"
+Class=USBDevice
+ClassGUID={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider=%ProviderName%
+CatalogFile=PL2305-WinUSB.cat
+DriverVer=07/16/2026,0.1.0.1
+PnpLockdown=1
+
+[Manufacturer]
+%ProviderName%=DeviceList,NTamd64
+
+[DeviceList.NTamd64]
+%DeviceName%=USB_Install,USB\VID_067B&PID_2305
+
+[USB_Install]
+Include=winusb.inf
+Needs=WINUSB.NT
+
+[USB_Install.Services]
+Include=winusb.inf
+Needs=WINUSB.NT.Services
+
+[USB_Install.HW]
+AddReg=Device_AddReg
+
+[Device_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x00010000,"{D14692B4-3AFD-4F6C-AB91-F2B456CF7F77}"
+
+[Strings]
+ProviderName="Pd290-Win11"
+DeviceName="Pd290-Win11 PL2305 WinUSB Relay"

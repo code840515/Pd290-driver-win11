@@ -1,0 +1,56 @@
+;
+;	Printer Installation File
+;
+;	 List of supported printers, manufacturers
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%Pd%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+
+;
+; Manufacturer section.
+;
+; This section lists all of the manufacturers
+; that we will display in the Dialog box
+;
+
+[Manufacturer]
+"Pd"=Pd, NTamd64
+
+;
+; Model Specifications Section
+;
+
+[Pd]
+"Pd290"  = Pd290.GPD
+
+[Pd.NTamd64]
+"Pd290"  = Pd290.GPD
+
+;
+; Installer section(s) referenced above.
+;
+
+[Pd290.GPD]
+CopyFiles=@T58.dll,@Pd290.GPD
+DataSection=UNIDRV_DATA
+DataFile=Pd290.GPD
+Include=NTPRINT.INF
+Needs=UNIDRV.OEM
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[SourceDisksNames.amd64]
+1 = %disk1%,,,
+
+[SourceDisksFiles]
+T58.DLL             = 1
+Pd290.GPD        = 1
+
+[Strings]
+PrinterClassName="Printers"
+disk1="Pd Printer Driver Setup Disk"

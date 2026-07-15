@@ -1,0 +1,13 @@
+*.cat binary
+*.cer binary
+*.dll binary
+*.exe binary
+*.log binary
+*.prn binary
+*.zip binary
+*.gpd text
+*.inf text eol=crlf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.rc text eol=crlf
+*.md text

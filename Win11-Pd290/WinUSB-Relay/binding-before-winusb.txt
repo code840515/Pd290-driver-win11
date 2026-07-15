@@ -1,0 +1,22 @@
+﻿Captured: 2026-07-15T19:38:56.4310689+08:00
+
+
+Status       : OK
+Class        : USB
+FriendlyName : USB 列印支援
+InstanceId   : USB\VID_067B&PID_2305\5&1390D02D&0&5
+
+
+
+
+
+
+DeviceName         : USB Printing Support
+DeviceID           : USB\VID_067B&PID_2305\5&1390D02D&0&5
+DriverProviderName : Microsoft
+InfName            : usbprint.inf
+DriverVersion      : 10.0.26100.8521
+
+
+
+

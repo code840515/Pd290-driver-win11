@@ -1,0 +1,67 @@
+#include <windows.h>
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+STRINGTABLE
+BEGIN
+    258 "58(48) x 210 mm"
+    259 "58(48) x 297 mm"
+    260 "58(48) x 3276 mm"
+    261 "NO Cash Drawer"
+    262 "Cash Drawer #1 Before Printing"
+    263 "Cash Drawer #2 Before Printing"
+    264 "Cash Drawer #1+#2 Before Printing"
+    265 "Cash Drawer #1 After Printing"
+    266 "Cash Drawer #2 After Printing"
+    267 "Cash Drawer #1+#2 After Printing"
+    268 "Report[Cut]"
+    269 "Form[Cut]"
+    270 "No Cut[No Feed]"
+    271 "Report[No Cut]"
+    272 "Form[No Cut]"
+    273 "No Beep"
+    274 "[Form]Beep After Printing"
+    275 "[Form]Beep Before Printing"
+    276 "[Report]Beep After Printing"
+    277 "[Report]Beep Before Printing"
+    278 "Not Print NV Logo"
+    279 "Print NV Logo1"
+    280 "Print NV Logo2"
+    281 "Print NV Logo3"
+    282 "Print NV Logo4"
+    283 "Print NV Logo5"
+    284 "Print NV Logo6"
+    285 "Print NV Logo7"
+    286 "Print NV Logo8"
+    287 "Print NV Logo9"
+    288 "Cash Drawer Before Printing"
+    289 "Cash Drawer After Printing"
+END
+
+1 VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Pd\0"
+            VALUE "FileDescription", "Pd290 printer resource library\0"
+            VALUE "FileVersion", "2.0.0.0\0"
+            VALUE "InternalName", "T58.dll\0"
+            VALUE "OriginalFilename", "T58.dll\0"
+            VALUE "ProductName", "Pd290 Windows Printer Driver\0"
+            VALUE "ProductVersion", "2.0.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

@@ -1,0 +1,41 @@
+; Pd290-Win11 thermal printer driver for Windows 11 x64
+; Package-aware Microsoft Unidrv minidriver
+
+[Version]
+Signature="$Windows NT$"
+Provider=%ManufacturerName%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=Pd290.cat
+DriverVer=07/16/2026,2.0.0.2
+DriverIsolation=0
+
+[Manufacturer]
+%ManufacturerName%=Pd290Models,NTamd64
+
+[Pd290Models.NTamd64]
+%Pd290Model%=Pd290.Install
+
+[Pd290.Install]
+CopyFiles=@T58.dll,@Pd290.gpd
+DataFile=Pd290.gpd
+CoreDriverSections="{D20EA372-DD35-4950-9ED8-A6335AFE79F0},UNIDRV.OEM,UNIDRV_DATA"
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[SourceDisksNames.amd64]
+1=%DiskName%,,,
+
+[SourceDisksFiles.amd64]
+T58.dll=1
+Pd290.gpd=1
+
+[PrinterPackageInstallation.amd64]
+PackageAware=TRUE
+CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0}
+
+[Strings]
+ManufacturerName="Pd"
+Pd290Model="Pd290-Win11"
+DiskName="Pd290-Win11 x64 Driver"
